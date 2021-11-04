@@ -1,0 +1,35 @@
+.v-list {
+    box-sizing: border-box;
+    height:80vh;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:table;
+    width:100%;
+}
+
+li:nth-child(odd) {
+    background-color: #dfdfdf;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+}
+
+.logo-name {
+    display: flex;
+    align-items:center;
+}
+
+li img {
+    width: 3em;
+    padding-right: 1em;
+}
