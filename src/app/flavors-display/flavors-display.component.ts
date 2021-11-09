@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FlavorsService } from '../flavors.service';
 
 @Component({
   selector: 'app-flavors-display',
@@ -7,8 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FlavorsDisplayComponent implements OnInit {
 
-  constructor() { }
+  get variant(): any {
+    return this.FlavorsService.variant;
+  }
 
-  ngOnInit() {}
+  constructor(private FlavorsService : FlavorsService) {
+
+  }
+
+  ngOnInit() {
+
+  }
 
 }

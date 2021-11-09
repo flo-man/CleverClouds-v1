@@ -5,7 +5,7 @@
                 <img src="{{item.variant.logo}}" alt="logo">
                 {{item.variant.name}}
             </div>
-            <button>select</button>
+            <button (click)=setSelected(item)>select</button>
         </li>
     </ul>
 </div>

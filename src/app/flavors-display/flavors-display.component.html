@@ -1,5 +1,14 @@
-<div>
+<div *ngIf="variant.flavors !=null" class="f-list">
+    <h2>{{variant.name}}</h2>
     <ul>
-        <li></li>
+        <li *ngFor="let flavor of variant.flavors">
+            <div class="flav-details">
+                <div>{{flavor.name}}</div>
+                <div>CPUs: {{flavor.cpus}}</div>
+                <div>GPUs: {{flavor.gpus}}</div>
+                <div>RAM: {{flavor.mem}}</div>
+            </div>
+            <button>select</button>
+        </li>
     </ul>
 </div>

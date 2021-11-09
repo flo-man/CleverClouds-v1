@@ -45,21 +45,23 @@
   }
 
   .budget {
-    margin-top: 10px;
+    margin-bottom: 10px;
     background-color: rgb(242, 242, 242);
-    text-align: end;
+    text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
   }
 
 </style>
 
 <div>
   <h1>{{title}}</h1>
+  <div class="budget">
+    Total : (var-cart-total)
+  </div>
   <div class="wrapper">
     <div class="one"><app-variants-display></app-variants-display></div>
     <div class="two"><app-flavors-display></app-flavors-display></div>
     <div class="three"><app-cart-display></app-cart-display></div>
-  </div>
-  <div class="budget">
-    Total : 100€
   </div>
 </div>
