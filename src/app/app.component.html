@@ -45,6 +45,7 @@
   }
 
   .budget {
+    padding: 0.5em 0;
     margin-bottom: 10px;
     background-color: rgb(242, 242, 242);
     text-align: center;
@@ -57,7 +58,7 @@
 <div>
   <h1>{{title}}</h1>
   <div class="budget">
-    Total : (var-cart-total)
+    Total : {{getTotal()*41.904 | number : '1.2-2'}}€
   </div>
   <div class="wrapper">
     <div class="one"><app-variants-display></app-variants-display></div>

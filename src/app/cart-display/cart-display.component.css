@@ -1,0 +1,38 @@
+.c-list {
+    box-sizing: border-box;
+    height:80vh;
+    overflow:hidden;
+    overflow-y:scroll;
+}
+
+h2 {
+    padding: 1.1em;
+    margin: 0;
+    text-align: center;
+    background-color: #dfdfdf;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display:table;
+    width:100%;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+}
+
+.item-details {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+li > button {
+    height: 2em;
+}

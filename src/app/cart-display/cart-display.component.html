@@ -1,1 +1,13 @@
-<p>cart-display works!</p>
+<div class="c-list">
+    <h2 *ngIf="cart.length > 0">Cart</h2>
+    <ul>
+        <li *ngFor="let item of cart">
+            <div class="item-details">
+                <div>{{item[0]}}</div>
+                <div>{{item.name}}</div>
+                <div>{{item.price*41.904 | number : '1.2-2'}}</div>
+            </div>
+            <button (click)="removeFromCart(item)">remove</button>
+        </li>
+    </ul>
+</div>

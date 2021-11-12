@@ -27,8 +27,12 @@ li {
     padding: 1em;
 }
 
+li > button {
+    height: 2em;
+}
+
 .flav-details {
-    width: 50%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }

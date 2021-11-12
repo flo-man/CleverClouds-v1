@@ -1,7 +1,6 @@
-import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
-import { FlavorsService } from '../flavors.service';
-import {VariantsService} from '../variants.service';
+import { FlavorsService } from '../services/flavors.service';
+import {VariantsService} from '../services/variants.service';
 
 @Component({
   selector: 'app-variants-display',
@@ -24,7 +23,7 @@ export class VariantsDisplayComponent implements OnInit {
     console.log(variant); // TEST --- DELETE LATER
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
