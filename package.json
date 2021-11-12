@@ -1,6 +1,7 @@
 {
   "name": "tp-ver-one",
   "version": "0.0.0",
+  "main" : "tp-ver-one.js",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
