@@ -71,7 +71,8 @@
               "browserTarget": "tp-ver-one:build:production"
             },
             "development": {
-              "browserTarget": "tp-ver-one:build:development"
+              "browserTarget": "tp-ver-one:build:development",
+              "port": 8080
             }
           },
           "defaultConfiguration": "development"
