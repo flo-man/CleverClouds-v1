@@ -1,10 +1,10 @@
 {
   "name": "tp-ver-one",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main" : "tp-ver-one.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node tp-ver-one.js",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
